@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in detail</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /*here we can write css code*/
+    </style>
+    <script src="./js/script.js"></script>
+    <script>
+        /*we can write js code before closing of head tag*/
+    </script>
+</head>
+
+<body>
+
+
+    <script>
+        /*we can write js code before of body tag*/
+        //let's create function
+        //1. function definition
+
+        /*Syntax--
+        function functionName(){
+
+        }*/
+        // Naming convention of function-
+        //function must be written in 'camelCase' Convention
+
+        //Globall variable
+        var b = document.querySelector('body');
+
+        //example of function with no return value
+        function displayFunA() {// 'x' is a formal argument
+            //This is function body
+            console.log(b);
+            let h1 = document.createElement('h1');
+            b.append(h1);
+            let n1 = 'Such disruptions include higher-than-expected inflation, sudden spikes in interest rates to contain surging prices, or a pandemic resurgence.';
+            h1.append(n1);
+
+        }
+        //2. this is function calling
+        displayFunA();
+    </script>
+    <script>
+        //1. let's define a function
+
+        //example of function with no return value
+        function displayFunB(n2) {
+            //1.this is function body
+            let h2 = document.createElement('h2');
+            h2.append(n2);
+            b.append(h2);
+
+        }
+        //2. this is function calling
+        displayFunB("‘Perilously close’ to recession: World Bank cuts global growth for 2023 to 1.7%");
+    </script>
+
+    <script>
+        //1.this is function body
+
+        //Example of function with default value with no return
+        function displayFunC(n3 = 'Probe begins in Bengaluru metro collapse as 2 die, notices sent to contractors') {
+            //this is function body
+            let h3 = document.createElement('h3');
+            h3.append(n3);
+            b.append(h3);
+
+        }
+        //2. this is function calling
+        displayFunC();
+    </script>
+
+    <script>
+        //1.function definition
+
+        //Example of function with default value with no return.
+        function displayFunD(n4 = 'Canada imposes sanctions on 4 Sri Lankan officials over human rights violations') {
+            //this is function body
+            let h4 = document.createElement('h4');
+            h4.append(n4);
+            b.append(h4);
+
+        }
+        //2.this is function calling
+        displayFunD('Video: Indian-origin man collapses on court while playing badminton in Oman');
+    </script>
+
+    <script>
+        //Example of function with some return value
+        //1. function definition
+        function displayFunE() {
+            //this is function body
+            return 'The video of the incident showing a man suddenly collapsing during the badminton match has gone viral on social media.';
+        }
+        let n5 = displayFunE();
+        let h5 = document.createElement('h5');
+        h5.append(n5);
+        b.append(h5);
+
+    </script>
+    <script>
+        //Function definition can be stored in a variable
+        //1. function definition 
+        let y = function displayFunF() {
+            //this is function body
+            console.log("Hello from function body")
+        };
+        let z = function displayFuG() {
+            console.log("Hello from z variable function body");
+        }
+        //2. function calling
+        //displayFunF();
+        y();
+        z();
+    </script>
+</body>
+
+</html>
